@@ -9,89 +9,119 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap');
+    </style>
   <style>
   body {
-    font: 20px Montserrat, sans-serif;
+    font: 20px Libre Franklin, sans-serif;
     line-height: 1.8;
     color: #f5f6f7;
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
-    background-color: #1abc9c; /* Green */
+    background-color: #214b80; /* Green */
     color: #ffffff;
   }
-  .bg-2 { 
+  <!-- .bg-2 { 
     background-color: #474e5d; /* Dark Blue */
     color: #ffffff;
-  }
+  } -->
   .bg-3 { 
     background-color: #ffffff; /* White */
     color: #555555;
   }
   .bg-4 { 
-    background-color: #2f2f2f; /* Black Gray */
+    background-color: #071b3a; /* Black Gray */
     color: #fff;
   }
   .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
-  }
+
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+
+  /* EXAMPLE 9 - Center with Flexbox and Text*/
+.brand-centered {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color:#214b80
+} 
+.brand-centered .navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 20vh;
+}
+.navbar-toggle {
+    z-index: 1;
+}
+.navbar{
+       margin-bottom: 0px;
+}
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+
+
+.navbar-nav>li>.dropdown-menu {
+z-index: 9999;
+}
+
+body {
+font-family: "Lato";
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+.container{height: 20vh;}
+
+.second-image{
+  width: 100%;
+  height: 500px;
+  background-size: 100% 100%;
+  background-image: url("images/backgrounddetails.png")
+}
+
+
   </style>
 </head>
-<body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="brand-centered">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" src="style="margin-right: 10px; padding: 0;"  alt="Page logo" class="logo img-responsive"></a>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm an adventurer</h3>
+  <h2 class="margin"><b>AVR  SEA  FOODS</b></h2>
+  <img src="images/fish logo.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>FOR DIRECT SEA FISH</h3>
 </div>
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
+<div class="container-fluid text-center second-image" >
 </div>
 
 <!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
+<!-- <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Where To Find Me?</h3><br>
   <div class="row">
     <div class="col-sm-4">
@@ -107,11 +137,14 @@
       <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p> 
+  <h2>&nbsp;<i style='font-size:24px' class='fas'>&#xf879;</i>+91-70106699290 </h2><h2> <i style='font-size:24px' class='fas'>&#xf879;</i>+91-9688873931 </h2> 
+  <h2> <i style='font-size:24px' class='fab'>&#xf232;</i> +91 - 8637416133 </h2> 
+  <h2><i style="font-size:24px" class="fa">&#xf16d;</i> /avrseafoods</h2> 
+  <h2><i style='font-size:24px' class='fab'>&#xf09a;</i> /AVRseafoods</h2> 
 </footer>
 
 </body>
